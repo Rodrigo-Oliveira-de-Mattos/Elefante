@@ -39,6 +39,7 @@ body{
 .container img{
     height: 200px;
     margin: 20px 0;
+    border-radius: 10px;
 }
 
 .container button{
