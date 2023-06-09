@@ -5,6 +5,7 @@ let contadorElefantes = parseInt(contadorElefantesString.innerHTML);
 const rodarImg = document.querySelector('.img-elefante')
 
 document.querySelector('#incomoda').addEventListener('click', function(){
+    window.navigator.vibrate(200);
     if(quantElefantes % 2 === 0){
         contar()
     }else{
