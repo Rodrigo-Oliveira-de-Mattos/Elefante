@@ -17,6 +17,7 @@ body{
     border-radius: 999px;
     border: #a5c3a7 solid 10px;
     max-width: 300px;
+    cursor: pointer;
 }
 
 .container{
@@ -46,6 +47,7 @@ body{
     border-radius: 999px;
     width: 90%;
     padding: 15px;
+    cursor: pointer;
 }
 
 .container h3{
