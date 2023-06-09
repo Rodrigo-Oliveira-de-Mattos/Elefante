@@ -49,6 +49,10 @@ body{
     width: 90%;
     padding: 15px;
     cursor: pointer;
+    color: #47667b;
+}
+.container button:active {
+    transform: scale(0.95);
 }
 
 .container h3{
