@@ -11,11 +11,12 @@ body{
     align-items: center;
 }
 
-#elefante-btn, #start{
+#elefante-btn{
     background-color: #f8f4c4;
     padding: 30px;
     border-radius: 999px;
     border: #a5c3a7 solid 10px;
+    max-width: 300px;
 }
 
 .container{
