@@ -1,56 +1,86 @@
-html{
-    background-color: #6d8b89;
-    font-family: 'Roboto', sans-serif;
-    font-family: 62.5%;
+html[data-theme='verde']{
+    --background: #6d8b89;
+    --background-container: #f8f4c4;
+    --background-btn: #c0d1c2;
+    --color: #47667b;
+    --border-container:#a5c3a7;
+    --border-btn: #6d8b89;
+}
+
+html[data-theme='rosa']{
+    --background: #ffa0c3;
+    --background-container: #ffc8d7;
+    --background-btn: #ffb0da;
+    --color: #ff4580;
+    --border-container: #f73897;
+    --border-btn: #ff52a9;
 }
 
 body{
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
+
+    background-color: var(--background);
+}
+
+footer{
+    background-color: var(--background-container);
+
+    position: absolute;
+    bottom: 0;
+    padding: 15px 40%;
+    border-radius: 999px 999px 0 0;
 }
 
 #elefante-btn{
     background-color: #f8f4c4;
     padding: 30px;
     border-radius: 999px;
-    border: #a5c3a7 solid 10px;
-    max-width: 300px;
+    border: var(--border-container) solid 10px;
+    max-width: 250px;
+    cursor: pointer;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f8f4c4;
+    background-color: var(--background-container);
     padding: 50px;
     border-radius: 25px;
-    border: #a5c3a7 solid 10px;
+    border: var(--border-container) solid 10px;
 }
 
 .container h1{
     font-size: 50px;
     font-weight: 700;
-    color: #47667b;
+    color: var(--color);
 }
 
 .container img{
     height: 200px;
     margin: 20px 0;
+    border-radius: 10px;
 }
 
 .container button{
-    background-color: #c0d1c2;
-    border: #6d8b89 solid 5px;
+    background-color: var(--background-btn);
+    border: var(--border-btn) solid 5px;
     border-radius: 999px;
     width: 90%;
     padding: 15px;
     cursor: pointer;
+    color: var(--color);
+}
+.container button:active {
+    transform: scale(0.95);
 }
 
 .container h3{
-    color: #47667b;
+    color: var(--color);
     font-size: 30px;
     margin-top: 20px;
 }
@@ -69,10 +99,4 @@ body{
 }
 .img-elefante.rodar{
     animation: girar 2s linear infinite;
-}
-
-.ateste{
-    background-color: aliceblue;
-    height: 90px;
-    width: 728;
 }

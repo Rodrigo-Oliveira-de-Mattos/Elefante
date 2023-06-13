@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="verde">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +10,60 @@
     <link rel="stylesheet" href="src/css/reset.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7431839639198509"
+     crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="anuncio"></header>
+    <header class="anuncio">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7431839639198509"
+     crossorigin="anonymous"></script>
+<!-- bloco de anúncios -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7431839639198509"
+     data-ad-slot="9292008724"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </header>
+
+    
     <main class="container">
         <h1 class="quantidade-elefantes">1</h1>
-        <img class="img-elefante" src="./src/images/elefante 2.png" alt="Elefante">
+
+        <img class="img-elefante" id="elefante-image" src="src/images/elefante-verde.png" alt="Elefante">
+
         <button id="incomoda">INCOMODA</button>
         <h3 class="contador">1</h3>
     </main>
 
     <footer>
-        <a href="https://github.com/Rodrigo-Oliveira-de-Mattos"></a>
+        <input type="checkbox" name="toogle-rosa" id="toogle-rosa">
     </footer>
 
+    <script>
+        const elefanteRosa = "src/images/elefante-rosa.png";
+        const elefanteVerde = "src/images/elefante-verde.png";
+
+        const mudarParaVerde = () =>{
+            document.getElementById('elefante-image').src = elefanteVerde;
+            document.documentElement.setAttribute("data-theme", "verde");
+            localStorage.setItem("data-theme", "verde");
+        }
+
+        const mudarParaRosa = () => {
+            document.getElementById('elefante-image').src = elefanteRosa;
+            document.documentElement.setAttribute("data-theme", "rosa");
+            localStorage.setItem("data-theme", "rosa");
+        }
+
+    </script>
+    <script src="src/js/tema.js"></script>
     <script src="src/js/contador.js"></script>
 </body>
 </html>
