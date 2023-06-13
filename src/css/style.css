@@ -28,7 +28,6 @@ body{
 
 footer{
     background-color: var(--background-container);
-
     position: absolute;
     bottom: 0;
     padding: 15px 40%;
