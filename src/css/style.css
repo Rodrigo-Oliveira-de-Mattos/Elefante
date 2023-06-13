@@ -39,7 +39,11 @@ footer{
     background-color: #f8f4c4;
     padding: 30px;
     border-radius: 999px;
+<<<<<<< HEAD
     border: var(--border-container) solid 10px;
+=======
+    border: #a5c3a7 solid 10px;
+>>>>>>> 61cf394aa8be0f52ebdc4deddad2c304910cd142
     max-width: 250px;
     cursor: pointer;
 }
@@ -73,7 +77,11 @@ footer{
     width: 90%;
     padding: 15px;
     cursor: pointer;
+<<<<<<< HEAD
     color: var(--color);
+=======
+    color: #47667b;
+>>>>>>> 61cf394aa8be0f52ebdc4deddad2c304910cd142
 }
 .container button:active {
     transform: scale(0.95);
