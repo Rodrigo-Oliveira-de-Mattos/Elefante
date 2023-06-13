@@ -46,6 +46,7 @@ body{
     border-radius: 999px;
     width: 90%;
     padding: 15px;
+    cursor: pointer;
 }
 
 .container h3{
@@ -68,4 +69,10 @@ body{
 }
 .img-elefante.rodar{
     animation: girar 2s linear infinite;
+}
+
+.ateste{
+    background-color: aliceblue;
+    height: 90px;
+    width: 728;
 }
