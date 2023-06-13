@@ -85,10 +85,6 @@ footer{
     margin-top: 20px;
 }
 
-.esconder{
-    display: none;
-}
-
 @keyframes girar{
     0%{
         transform: rotate(0);
