@@ -74,7 +74,6 @@ footer{
     padding: 15px;
     cursor: pointer;
     color: var(--color);
-    color: #47667b;
 }
 .container button:active {
     transform: scale(0.95);
